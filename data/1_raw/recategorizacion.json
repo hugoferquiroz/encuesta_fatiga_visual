@@ -1,0 +1,63 @@
+{
+    "svi": {
+        "1": "si",
+        "0": "no"
+    },
+    "sexo": {
+        "1": "masculino",
+        "0": "femenino"
+    },
+    "estado_civil": {
+        "0": "soltero",
+        "1": "casado"
+    },
+    "ingresos_mensuales": {
+        "0": "<= 7000",
+        "1": "> 7000"
+    },
+    "uso_de_correccion_visual": {
+        "1": "si",
+        "0": "no"
+    },
+    "condiciones_oculares": {
+        "1": "si",
+        "0": "no"
+    },
+    "lentes": {
+        "1": "si",
+        "0": "no"
+    },
+    "iluminacion": {
+        "1": "adecuada",
+        "0": "inadecuada"
+    },
+    "frecuencia_de_pausas": {
+        "1": "si",
+        "0": "no"
+    },
+    "uso_de_dispositivos": {
+        "0": "<= 2h",
+        "1": "> 2h"
+    },
+    "distancia_hacia_el_monitor": {
+        "0": "<= 30 cm",
+        "1": "> 30 cm"
+    },
+    "tiempo_de_exposicion": {
+        "0": "<= 12h",
+        "1": "> 12h"
+    },
+    "edad": {
+        "0": "<= 35 años",
+        "1": "> 35 años"
+    },
+    "experiencia_radiologia": {
+        "0": "<= 3 años",
+        "1": "> 3 años"
+    },
+    "duracion_de_jornada": {
+        "0": "<= 10 horas",
+        "1": "> 10 horas"
+    }
+
+}

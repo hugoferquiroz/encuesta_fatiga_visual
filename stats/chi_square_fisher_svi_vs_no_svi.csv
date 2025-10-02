@@ -1,0 +1,14 @@
+variable,test,p_value,differences_significativas
+edad,Fisher,0.46112657956735925,False
+sexo,Fisher,1.0,False
+estado_civil,Fisher,0.7085944245922151,False
+experiencia_radiologia,Fisher,1.0,False
+ingresos_mensuales,Fisher,0.7219663852284384,False
+condiciones_oculares,Fisher,0.44248447204968955,False
+lentes,Fisher,1.0,False
+iluminacion,Fisher,1.0,False
+tiempo_de_exposicion,Fisher,0.694152923538231,False
+frecuencia_de_pausas,Fisher,0.503448275862069,False
+duracion_de_jornada,Fisher,0.1361825853990298,False
+uso_de_dispositivos,Fisher,0.6779456425633337,False
+distancia_hacia_el_monitor,Fisher,0.1361825853990298,False
