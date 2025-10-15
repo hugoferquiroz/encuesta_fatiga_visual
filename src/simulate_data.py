@@ -5,7 +5,7 @@ import random
 from score import compute_severity
 
 # Constants
-N_SUBJECTS = 60
+N_SUBJECTS = 40
 SYMPTOMS = [
     "ardor", "picor", "sensacion_cuerpo_extraño", "lagrimeo", "parpadeo_excesivo",
     "enrojecimiento_ocular", "dolor_ocular", "pesadez_parpados", "sequedad",
@@ -149,11 +149,28 @@ def main():
     # Generate dataset
     df = generate_dataset()
     
-    # Save to CSV
+    # Save complete dataset to CSV
     output_dir = Path("data/2_processed")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / "df_models_synthetic.csv"
     df.to_csv(output_path, index=False)
+    
+    # Create and save symptoms-only dataset
+    symptom_columns = []
+    for symptom in SYMPTOMS:
+        symptom_columns.extend([
+            f"{symptom}_frecuencia",
+            f"{symptom}_intensidad",
+            f"{symptom}_severidad"
+        ])
+    
+    # Add total score and SVI classification
+    symptom_columns.extend(['puntaje_sindrome_visual_informatico', 'svi', 'severidad_svi'])
+    
+    # Extract symptoms DataFrame and save
+    df_symptoms = df[symptom_columns]
+    symptoms_path = output_dir / "symptoms_responses.csv"
+    df_symptoms.to_csv(symptoms_path, index=False)
     
     # Print summary statistics
     print("\nDataset Summary:")
